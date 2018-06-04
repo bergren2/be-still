@@ -1,0 +1,16 @@
+{
+  "name": "be-still",
+  "version": "1.0.0",
+  "description": "Firefox Extension to help quiet the noise.",
+  "main": "index.js",
+  "repository": "https://github.com/bergren2/be-still.git",
+  "author": "bergren2 <dan@heymrbass.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "web-ext": "^2.7.0"
+  },
+  "scripts": {
+    "start:firefox": "web-ext run --source-dir ./dist/"
+  }
+}

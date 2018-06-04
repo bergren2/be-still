@@ -1,0 +1,15 @@
+{
+  "description": "Be Still",
+  "manifest_version": 2,
+  "name": "be-still",
+  "version": "1.0.0",
+
+  "permissions": [
+    "webRequest",
+    "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
