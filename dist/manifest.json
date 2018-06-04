@@ -6,7 +6,9 @@
 
   "permissions": [
     "webRequest",
-    "<all_urls>"
+    "webRequestBlocking",
+    "https://developer.mozilla.org/",
+    "https://mdn.mozillademos.org/"
   ],
 
   "background": {
