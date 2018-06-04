@@ -17,6 +17,7 @@
     "web-ext": "^2.7.0"
   },
   "scripts": {
-    "start:firefox": "web-ext run --source-dir ./dist/"
+    "start:firefox": "web-ext run --source-dir ./dist/",
+    "build": "web-ext build --source-dir ./dist/"
   }
 }
