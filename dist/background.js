@@ -1,14 +1,19 @@
-var pattern = "https://mdn.mozillademos.org/*";
+var blocklist = [
+  "*://*.facebook.com/*",
+  "*://*.reddit.com/*",
+  "*://*.twitter.com/*",
+  "*://*.youtube.com/*"
+];
 
 function redirect(requestDetails) {
   console.log("Redirecting: " + requestDetails.url);
   return {
-    redirectUrl: "https://38.media.tumblr.com/tumblr_ldbj01lZiP1qe0eclo1_500.gif"
+    redirectUrl: "https://media.giphy.com/media/SHyuhBtRr8Zeo/giphy.gif"
   };
 }
 
 browser.webRequest.onBeforeRequest.addListener(
   redirect,
-  {urls:[pattern], types:["image"]},
+  {urls:blocklist},
   ["blocking"]
 );
