@@ -1,8 +1,8 @@
 {
-  "description": "Be Still",
-  "manifest_version": 2,
-  "name": "be-still",
+  "name": "Be Still",
+  "description": "Firefox Extension to help quiet the noise.",
   "version": "1.0.0",
+  "manifest_version": 2,
 
   "permissions": [
     "webRequest",
