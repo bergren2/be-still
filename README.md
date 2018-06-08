@@ -15,7 +15,7 @@ If you need to pass in a specific browser, you can do so as such:
     $ yarn run start:firefox --firefox=firefoxdeveloperedition
 
 You can also go to `about:debugging` in Firefox and load Temporary Extensions
-directly.
+directly via the manifest.
 
 ## Distribution
 
