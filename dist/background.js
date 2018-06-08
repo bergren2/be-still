@@ -1,6 +1,8 @@
 var blocklist = [
+  "*://*.amazon.com/*",
   "*://*.facebook.com/*",
   "*://*.reddit.com/*",
+  "*://*.tumblr.com/*",
   "*://*.twitter.com/*",
   "*://*.youtube.com/*"
 ];
