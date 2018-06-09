@@ -1,3 +1,5 @@
+[![Buy Me a Coffee at ko-fi.com](https://az743702.vo.msecnd.net/cdn/kofi5.png?v=0)](https://ko-fi.com/E1E275PX)
+
 # Be Still
 
 Firefox Extension to help quiet the noise.
