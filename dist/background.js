@@ -9,7 +9,7 @@ var blocklist = [
 
 var registering = browser.contentScripts.register({
   matches: blocklist,
-  css: [{file: "notify.css"}],
-  js: [{file: "notify.js"}],
+  css: [{file: "bestill.css"}],
+  js: [{file: "bestill.js"}],
   runAt: "document_idle"
 });
