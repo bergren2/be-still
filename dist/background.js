@@ -7,15 +7,9 @@ var blocklist = [
   "*://*.youtube.com/*"
 ];
 
-function redirect(requestDetails) {
-  console.log("Redirecting: " + requestDetails.url);
-  return {
-    redirectUrl: "https://media.giphy.com/media/SHyuhBtRr8Zeo/giphy.gif"
-  };
-}
-
-browser.webRequest.onBeforeRequest.addListener(
-  redirect,
-  {urls:blocklist},
-  ["blocking"]
-);
+var registering = browser.contentScripts.register({
+  matches: blocklist,
+  css: [{file: "notify.css"}],
+  js: [{file: "notify.js"}],
+  runAt: "document_idle"
+});
