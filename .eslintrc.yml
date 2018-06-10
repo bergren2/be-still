@@ -1,2 +1,5 @@
 extends: airbnb
-quotes: double
+rules:
+  quotes:
+    - error
+    - double
