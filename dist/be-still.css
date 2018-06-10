@@ -1,4 +1,15 @@
 body {
   font-family: "Fira Sans", sans-serif;
+  font-size: 52px;
+  color: white;
+  text-shadow: 0.5px 0.5px 10px black;
   text-align: center;
+  display: inline-block;
+
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
