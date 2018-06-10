@@ -7,9 +7,17 @@ var blocklist = [
   "*://*.youtube.com/*"
 ];
 
-var registering = browser.contentScripts.register({
-  matches: blocklist,
-  css: [{file: "bestill.css"}],
-  js: [{file: "bestill.js"}],
-  runAt: "document_idle"
-});
+function redirect(requestDetails) {
+  return {
+    redirectUrl: browser.extension.getURL("be-still.html")
+  };
+}
+
+browser.webRequest.onBeforeRequest.addListener(
+  redirect,
+  {
+    urls: blocklist,
+    types: ["main_frame"]
+  },
+  ["blocking"]
+);
