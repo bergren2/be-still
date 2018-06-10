@@ -18,6 +18,6 @@
   },
   "scripts": {
     "start:firefox": "web-ext run --source-dir ./dist/",
-    "build": "web-ext build --source-dir ./dist/"
+    "build": "web-ext build --source-dir ./dist/ --overwrite-dest"
   }
 }
