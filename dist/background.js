@@ -1,15 +1,16 @@
-var blocklist = [
+/* global browser */
+const blocklist = [
   "*://*.amazon.com/*",
   "*://*.facebook.com/*",
   "*://*.reddit.com/*",
   "*://*.tumblr.com/*",
   "*://*.twitter.com/*",
-  "*://*.youtube.com/*"
+  "*://*.youtube.com/*",
 ];
 
-function redirect(requestDetails) {
+function redirect() {
   return {
-    redirectUrl: browser.extension.getURL("be-still.html")
+    redirectUrl: browser.extension.getURL("be-still.html"),
   };
 }
 
@@ -17,7 +18,7 @@ browser.webRequest.onBeforeRequest.addListener(
   redirect,
   {
     urls: blocklist,
-    types: ["main_frame"]
+    types: ["main_frame"],
   },
-  ["blocking"]
+  ["blocking"],
 );
