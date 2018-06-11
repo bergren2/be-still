@@ -3,3 +3,6 @@ rules:
   quotes:
     - error
     - double
+  comma-dangle:
+    - error
+    - never
