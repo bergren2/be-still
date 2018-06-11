@@ -9,7 +9,6 @@ function saveOptions(e) {
 function restoreOptions() {
   const gettingItem = browser.storage.local.get("enabled");
   gettingItem.then((res) => {
-    console.log(res);
     document.querySelector("#enabled").checked = res.enabled;
   });
 }
