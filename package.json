@@ -20,10 +20,10 @@
     "web-ext": "^2.7.0"
   },
   "scripts": {
-    "build": "web-ext build --source-dir ./dist/ --overwrite-dest",
-    "start:firefox": "web-ext run --source-dir ./dist/",
+    "build": "web-ext build --source-dir ./src/ --overwrite-dest",
+    "start:firefox": "web-ext run --source-dir ./src/",
     "test": "./tests/runtests.sh",
-    "test:webextlint": "web-ext lint --source-dir ./dist/",
+    "test:webextlint": "web-ext lint --source-dir ./src/",
     "test:eslint": "eslint dist"
   }
 }
