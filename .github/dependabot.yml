@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "09:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: web-ext
+    versions:
+    - 5.4.1
+  - dependency-name: eslint-plugin-promise
+    versions:
+    - 4.2.1
